@@ -14,7 +14,6 @@ int main()
   ab2.print();
   std::cout << "Radius at phi=1.0 rad: " << ab2.stabilityRadius(1.0) << std::endl;
   std::cout << "Radius at phi=0.0: " << ab2.stabilityRadius(0.0) << std::endl;
-  //std::cout << "Radius at phi=pi/2: " << ab2.stabilityRadius(M_PI/2) << std::endl;
 
   auto k1l2 = ExtendedButcherTableau::create("k1L2",0.5);
   std::cout << "k1L2 Butcher Tableaux:" << std::endl;

@@ -213,7 +213,7 @@ ExtendedButcherTableau ExtendedButcherTableau::k1L2(double k)
 {
   std::vector<double> b = {1.0};
   std::vector<double> A = {}; // flattened lower triangular
-  std::vector<double> beta = {1.0 + k, -k};
+  std::vector<double> beta = {(1.0 + k)/(k+0.5), -k(k+0.5)};
   std::vector<double> alpha = {2*k/(k+0.5), -(k-0.5)/(k+0.5)};
   std::string name = "k1L2(" + std::to_string(k) + ")";
   unsigned int s = b.size();
